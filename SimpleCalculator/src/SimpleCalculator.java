@@ -20,26 +20,29 @@ public class SimpleCalculator implements Calculator{
         b = keyboard.nextDouble();
 
         //Conditions
-        if (function == "+")
+        if (function.equals("+"))
         {
             double result = Calculator.add(a, b);
             System.out.print("Your answer is " + result);
         }
-        if (function == "-")
+        if (function.equals("-"))
         {
             double result = Calculator.add(a, b);
             System.out.print("Your answer is " + result);
         }
-        if (function == "/")
+        if (function.equals("/"))
         {
             double result = Calculator.divide(a, b);
             System.out.print("Your answer is " + result);
         }
-        if (function == "*")
+        if (function.equals("*"))
         {
             double result = Calculator.multiply(a, b);
             System.out.print("Your answer is " + result);
         }
-
+        else
+        {
+            System.out.print("The operator you have entered is not valid!!");
+        }
     }
 }
